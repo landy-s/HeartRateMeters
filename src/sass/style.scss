@@ -2,10 +2,25 @@
 @import "base/mixins";
 
 * {
-    font-family: 'Museo Sanas Cyrl', sans-serif;
+    font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
 .container {
-    min-width: 950px;
+    max-width: 950px;
     margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/perks';
+
+.headers {
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0d0d0d;
 }
