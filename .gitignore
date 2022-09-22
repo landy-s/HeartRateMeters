@@ -19,3 +19,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/icons/old
+/src/icons/benefit/old
+/src/icons/contact_info/old
+/src/icons/main/old
+/src/icons/review/old
