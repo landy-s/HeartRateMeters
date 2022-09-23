@@ -11,7 +11,7 @@
         }
     }
     .promo {
-        background: url(../../img/bg1.jpg) left 10% center/cover no-repeat;
+        background: url(../img/bg1.jpg) left 10% center/cover no-repeat;
         &__header {
             font-size: 40px;
             line-height: 40px;
@@ -51,7 +51,6 @@
 @media (max-width: 991px) {
     .promo {
         padding: 20px 0 60px 0;
-        background: url(../../img/bg1.jpg) left 15% center/cover no-repeat;
     }
     .perks {
         padding: 60px 0 60px 0;
@@ -76,7 +75,7 @@
     }
     .promo {
         min-height: 600px;
-        background: url(../../img/bg1.jpg) left 20% center/cover no-repeat;
+        background: url(../img/bg1.jpg) left 20% center/cover no-repeat;
         &__wrapper {
             margin-top: 60px;
             align-items: center;
@@ -158,7 +157,7 @@
     .promo {
         min-height: 425px;
         padding: 20px 0 40px 0;
-        background: url(../../img/bg1.jpg) left 25% (center/cover) no-repeat;
+        background: url(../img/bg1.jpg) left 25% (center/cover) no-repeat;
         &__wrapper {
             margin-top: 40px;
         }
