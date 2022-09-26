@@ -15,16 +15,24 @@
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/perks';
+@import 'blocks/consult';
+@import 'blocks/forms';
 
 
 .headers {
     display: block;
     margin: 0 auto;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     color: #0d0d0d;
+    &_left {
+        color: #fff;
+        font-size: 36px;
+        text-align: left;
+        line-height: 36px;    
+    }
 }
 
 @import 'base/media';
