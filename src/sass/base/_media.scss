@@ -46,6 +46,14 @@
             margin-top: 24px;
         }
     }
+    .carousel {
+        .prev {
+            left: -40px;
+        }
+        .next {
+            right: -40px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -191,6 +199,24 @@
             line-height: 17px;
         }
     }
+    .modal {
+        width: 350px;
+        min-height: 355px;
+        padding: 20px 25px 20px 25px;
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        .error {
+            margin-bottom: 10px;
+        }
+        label.error {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -218,6 +244,10 @@
             width: 250px;
             height: 40px;
             font-size: 15px;
+        }
+        &_mini {
+            height: 40px;
+            font-size: 12px;
         }
     }
     .promo {
@@ -278,8 +308,8 @@
         
     }
     .feed-form {
-        width: 275px;
-        margin-top: 30px;
+        width: 250px;
+        margin-top: 20px;
         input {
             height: 40px;
             padding: 0 12px;
@@ -354,6 +384,31 @@
             img {
                 height: 20px;
             }
+        }
+    }
+    .modal {
+        width: 300px;
+        min-height: 300px;
+        padding: 20px 25px 20px 25px;
+        &__close {
+            position: absolute;
+            top: -40px;
+            right: 0px;
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        .error {
+            margin-bottom: 10px;
+        }
+        label.error {
+            margin-bottom: 12px;
+            font-size: 14px;
         }
     }
 }

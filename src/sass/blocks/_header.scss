@@ -22,10 +22,12 @@
         display: block;
         font-size: 18px;
         font-weight: 700;
-        color: #fff;
+        color: #fff; 
+        transition: 0.5s all;
         &:hover {
             color: #fff;
             text-decoration: none;
+            text-shadow: 3px 3px 7px grey;
         }
     }
     &__contacts {

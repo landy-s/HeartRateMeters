@@ -26,6 +26,7 @@
         &:hover {
             box-shadow: 3px 3px 20px $main-color;
             border: none;
+            text-shadow: 2px 2px 5px grey;
         }
         div {
             transform: skew(25deg);
@@ -34,6 +35,7 @@
             color:  #fff;
             background-color: $main-color;
             border: none;
+            text-shadow: 2px 2px 5px black;
         }
     }
     &__content {
@@ -80,9 +82,12 @@
             text-align: center;
             text-transform: uppercase;
             text-decoration: underline;
-            color: $main-color;
+            color: $main-color; 
+            transition: 0.5s all;
             &:hover {
                 color: $main-color;
+                text-shadow: 2px 2px 5px grey;
+                text-decoration: none;
             }
         }
         hr {
@@ -164,9 +169,12 @@
             text-align: center;
             color: $main-color;
             text-decoration: underline;
-            text-transform: uppercase;
+            text-transform: uppercase; 
+            transition: 0.5s all;
             &:hover {
                 color: $main-color;
+                text-shadow: 2px 2px 5px grey;
+                text-decoration: none;
             }
         }
     }

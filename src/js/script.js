@@ -67,3 +67,78 @@ function toggleSlide (item) {
 
 toggleSlide ('.catalogue-item__link');
 toggleSlide ('.catalogue-item__back');
+
+ // Modal
+
+$('[data-modal=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn('slow');
+});
+
+$('.modal__close').on('click', function () {
+    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+});
+
+$('.button_mini').each(function(i) {
+    $(this).on('click', function() {
+        $('#order .modal__descr').text($('.catalogue-item__subtitle').eq(i).text());
+        $('.overlay, #order').fadeIn('slow');
+    })
+});
+
+// $('#consult-form').validate();
+// $('#consultation form').validate({
+//     rules: {
+//         name:  {
+//             required: true,
+//             minlength: 2
+//         },
+//         phone: "required",
+//         email: {
+//             required: true,
+//             email: true
+//         }
+//     },
+//     messages: {
+//         name: {
+//             required: "Пожалуйста, введите своё имя",
+//             minlength: jQuery.validator.format("Минимум {0} символа!")
+//         },
+//         phone: "Пожалуйста, введите свой номер телефона",
+//         email: {
+//           required: "Пожалуйста, введите свой email",
+//           email: "Неправильно введён адрес почты"
+//         }
+//     }
+// });
+// $('#order form').validate();
+
+function validateForms(form){
+    $(form).validate({
+        rules: {
+            name:  {
+                required: true,
+                minlength: 2
+            },
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Пожалуйста, введите своё имя",
+                minlength: jQuery.validator.format("Минимум {0} символа!")
+            },
+            phone: "Пожалуйста, введите свой номер телефона",
+            email: {
+              required: "Пожалуйста, введите свой email",
+              email: "Неправильно введён адрес почты"
+            }
+        }
+    });
+};
+
+validateForms('#consult-form');
+validateForms('#consultation form');
+validateForms('#order form');
