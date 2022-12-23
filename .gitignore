@@ -25,3 +25,4 @@ yarn-error.log*
 /src/icons/contact_info/old
 /src/icons/main/old
 /src/icons/review/old
+/dist
